@@ -14,7 +14,7 @@ from PIL import Image
 
 
 def main():
-    img_path = str(Path(__file__).resolve().parent.joinpath('images', 'pi_logo.png'))
+    img_path = str(Path(__file__).resolve().parent.joinpath('images', 'metatron-cube.png'))
     logo = Image.open(img_path).convert("RGBA")
     fff = Image.new(logo.mode, logo.size, (255,) * 4)
 
